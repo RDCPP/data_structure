@@ -1,0 +1,20 @@
+// public Block malloc(int size) {
+//     Block b = new Block(size,0,0);
+//     Node <Block> tmp = heap.getFirst();
+//     while(true){
+//         try {
+//             if(size <= tmp.getItem().size){
+//                 // b = new Block(size,tmp.getItem().start,tmp.getItem().start + size - 1);
+//                 b.start = tmp.getItem().start;
+//                 b.end = tmp.getItem().start + size - 1;
+//                 tmp.getItem().size -= size;
+//                 tmp.getItem().start += size;
+//                 break;
+//             }
+//             tmp = tmp.getNext();
+//         } catch (RuntimeException e) {
+//             throw new OutOfMemoryException("Not Enough Memory");
+//         }
+//     }
+//     return b;
+// }
